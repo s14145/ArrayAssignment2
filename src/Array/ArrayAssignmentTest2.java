@@ -30,26 +30,26 @@ public class ArrayAssignmentTest2 {
 		 
 	}
 	
-	
+	// Main Method 
 	public static void main(String[] args) {
-		int[] org_randNumbers = new int[50];
 	
-		// Generates 50 random integers between 1 and 20
+	// Array of size 50
+	int[] org_randNumbers = new int[50];
+	
+	// Generates 50 random integers between 1 and 20
         for (int i = 0; i < org_randNumbers.length; i++) {
             org_randNumbers[i] = (int) (Math.random() * 20 + 1);
         }
               
-        
-        
         // Sorting Array in ascending order
         Arrays.sort(org_randNumbers);
         
-     // Displaying Array that stores 50 Random Integers between 1 and 20
+        // Displaying Array that stores 50 Random Integers between 1 and 20
         System.out.print("Arrays with 50 Random Numbers: ");
         System.out.println(Arrays.toString(org_randNumbers));
         System.out.println("\n");
            
-        // Display Frequency of random elements in array
+        // Above static method is called here in Main method to display elements that appear more than twice
         displayArrayElementTwice(org_randNumbers);
            
         // New array to store the frequency of each elements in array
@@ -91,7 +91,7 @@ public class ArrayAssignmentTest2 {
         
         for(int p=0;p<new_randNumbers.length;p++) {
         	if(new_randNumbers[p] != visited) { 
-        		
+        		// Displays the frequency of elements in the array
         		System.out.println(" "+org_randNumbers[p]+"\t"+"\t"+new_randNumbers[p]);
         	}
         }
