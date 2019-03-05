@@ -8,7 +8,19 @@ import java.util.Set;
 
 public class ArrayAssignmentTest2 {
 	
-	// Static method to display elements that appear more than twice in array
+	/*
+	* @author XXXX
+	* @version 1.0
+	* @since 1.8
+	* @see Java.lang
+	*
+	* Static method to display elements that appear more than twice in array
+	*
+	* @param new_randNumbers the original array
+	*
+	* @return int[] the integer array
+	*
+	*/
 	static int[] displayArrayElementTwice(int new_randNumbers[]) {
 				
 		 System.out.print("Elements that appear more than twice are: ");
@@ -33,7 +45,17 @@ public class ArrayAssignmentTest2 {
 		 
 	}
 	
-	// Main Method 
+	/* 
+	* @author XXXX
+	* @version 1.0
+	* @since 1.8
+	* 
+	* Main Method 
+	*
+	* @param String[] args the string array arguments
+	*
+	* @return void 
+	*/
 	public static void main(String[] args) {
 	
 	// Array of size 50
