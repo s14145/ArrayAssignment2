@@ -8,17 +8,20 @@ import java.util.Set;
 
 public class ArrayAssignmentTest2 {
 	
+	// Static method to display elements that appear more than twice in array
 	static int[] displayArrayElementTwice(int new_randNumbers[]) {
 				
 		 System.out.print("Elements that appear more than twice are: ");
 		
 		 System.out.print("[");
+		
+		 // Condition to check elements that appear more than twice in the array
 		 for(int i = 0, j = 1; j < new_randNumbers.length ; j++, i++){
 			    if(new_randNumbers[i] == new_randNumbers[j]){
 			    	
 			    	System.out.print(new_randNumbers[i]+",");
 			    
-			    	
+			    	// Condition to print element once that is present twice in the array
 			        while(j < new_randNumbers.length && new_randNumbers[i] == new_randNumbers[j]) 
 			        j++;
 			        i = j - 1; 
@@ -70,6 +73,7 @@ public class ArrayAssignmentTest2 {
         System.out.println("----------------xxx------xxxx-----------------------");
         System.out.println("Number"+"\t"+"Frequency");
       
+	// Initialized visited variable which will be used to avoid printing duplicate element in array	
         int visited=-1;
        
         for(int p=0;p<org_randNumbers.length;p++) {
